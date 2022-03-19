@@ -1,37 +1,32 @@
 
 let aux = 0;
-function abuelita(dato){
-  
-    
-   // let dato = 'OK'
+function abuelita(){
+        
+        let dato = prompt('Hablando con la Abuelita')
+   
         dato = String(dato)
 
             if(dato.charAt(0) === dato.charAt(0).toUpperCase()){
                 
-                console.log('no desde 1983')
-                    if( dato == 'ADIOS TQM'){
+                alert('NO, NO DESDE 1983')
+               
+                    if( dato == 'OK'){
                      aux++
-                     console.log(aux)
+                     //console.log(aux)
+                     alert(`${aux}`)
                     }
                     if(aux === 3){
-                        console.log('SE ACABO LA CONVERSACION CON LA ABUELITA DE BATMAN XD')
+                        alert('SE ACABO LA CONVERSACION CON LA ABUELITA DE BATMAN')
+                        return 0                  
                     }
-               
+                    abuelita()
             } else {
-                console.log('no te escucho')
+                
+                alert('¡EH! ¡NO TE ESCUCHO, HIJO!')
+                abuelita()
                 
             }
 
 }
 
-//abuelita('hola')
-//abuelita('hola')
-//abuelita('hola')
-
-//abuelita('HOLA')
-//abuelita('HOLA')
-//abuelita('HOLA')
-
-abuelita('ADIOS TQM')
-abuelita('ADIOS TQM')
-abuelita('ADIOS TQM')
+abuelita()
