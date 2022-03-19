@@ -10,7 +10,7 @@ function abuelita(){
                 
                 alert('NO, NO DESDE 1983')
                
-                    if( dato == 'OK'){
+                    if( dato == 'ADIOS TQM'){
                      aux++
                      //console.log(aux)
                      alert(`${aux}`)
